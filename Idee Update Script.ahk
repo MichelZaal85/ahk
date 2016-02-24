@@ -9,13 +9,13 @@ FileAppend,MsgBox Version 2,Update2.ahk ;Create the 'new version'
 MsgBox Version 1 ;Identify this script as version 1
 
 BatchFile=
-(
-Ping 127.0.0.1
-Del Update1.ahk
-Rename Update2.ahk Update1.ahk
-%A_ScriptFullPath%
-Del Update.bat
-)
+	(
+		Ping 127.0.0.1
+		Del Update1.ahk
+		Rename Update2.ahk Update1.ahk
+		%A_ScriptFullPath%
+		Del Update.bat
+	)
 
 /*
 Design a batch file to:
